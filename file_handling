@@ -1,0 +1,35 @@
+//fstream
+//fstream f;
+//f.open("filenname",ios::in|ios::out|ios::binary)
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+class student{
+char name[20];
+int id;
+public:
+void getstu()
+{
+    cout<<"Enter name,id of student: ";
+    cin>>name>>id;
+    cout<<"Name "<<name<<endl<<" ID "<<id<<endl;
+}
+};
+int main()
+{
+    int op,flag=1;
+    student s;
+    ofstream file;
+    file.open("Student Record.txt");
+    do
+    {
+        s.getstu();
+        file.write((char*)&s,sizeof(s));
+        cout<<"one record entered"<<endl;
+        cout<<"Do you want to add more";
+        cin>>flag;
+
+    } while(flag!=0);
+return 0;
+}
