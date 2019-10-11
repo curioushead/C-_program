@@ -1,0 +1,393 @@
+#include<iostream>
+using namespace std;
+
+/*
+class Student{
+char name[20];
+int roll_no;
+int marks;
+public:
+    void getinfo ()
+    {
+        cout<<"Enter your name,Roll no,Marks"<<endl;
+        cin>>name>>roll_no>>marks;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl<<"Roll Number:"<<roll_no<<endl<<"Marks:"<<marks;
+
+    }
+}s1;
+int main()
+{
+    Student s2; //OBJECT
+    s2.getinfo();
+    s2.display();
+}
+*/
+
+
+/*
+
+class Student{
+char name[20];
+int roll_no;
+int marks;
+public:
+    void getinfo ()
+    {
+        cout<<"Enter your name,Roll no,Marks"<<endl;
+        cin>>name>>roll_no>>marks;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl<<"Roll Number:"<<roll_no<<endl<<"Marks:"<<marks;
+
+    }
+}s1,s2;
+int main()
+{
+    s2.getinfo();
+    s2.display();
+}
+*/
+/*
+class Student{
+char name[20];
+int roll_no;
+int marks;
+public:
+    void getinfo ()
+    {
+        cout<<"Enter your name,Roll no,Marks"<<endl;
+        cin>>name>>roll_no>>marks;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl<<"Roll Number:"<<roll_no<<endl<<"Marks:"<<marks;
+
+    }
+};
+int main()
+{
+    Student s1,s2;//OBJECT
+    s1.getinfo();
+    s1.display();
+    s2.getinfo();
+    s2.display();
+}
+*/
+
+
+/*
+class Student{
+char name[20];
+int roll_no;
+int marks;
+public:
+    void getinfo ()
+    {
+        cout<<"Enter your name,Roll no,Marks"<<endl;
+        cin>>name>>roll_no>>marks;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl<<"Roll Number:"<<roll_no<<endl<<"Marks:"<<marks;
+
+    }
+};
+int main()
+{
+    Student s[5];
+    for(int i=0;i<5;i++)
+    {
+        s[i].getinfo();
+        s[i].display();
+    }
+}
+*/
+
+
+/*
+class Student{
+char name[20];
+int roll_no;
+int marks;
+public:
+    void getinfo ()
+    {
+        cout<<"Enter your name,Roll no,Marks"<<endl;
+        cin>>name>>roll_no>>marks;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl<<"Roll Number:"<<roll_no<<endl<<"Marks:"<<marks;
+
+    }
+}*s,s1;
+int main()
+{
+    s=&s1;
+    s1.getinfo();
+    s1.display();
+
+}
+
+*/
+
+
+/*
+class Student{
+char name[20];
+int roll_no;
+int marks;
+public:
+    void getinfo ()
+    {
+        cout<<"Enter your name,Roll no,Marks"<<endl;
+        cin>>name>>roll_no>>marks;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl<<"Roll Number:"<<roll_no<<endl<<"Marks:"<<marks;
+
+    }
+}*s,s1,s2;
+int main()
+{
+    s=&s1;
+    s1.getinfo();
+    s1.display();
+    s=&s2;
+    s2.getinfo();
+    s2.display();
+}
+*/
+
+
+/*
+class Student{
+char name[20];
+int roll_no;
+int marks;
+public:
+    void getinfo ()
+    {
+        cout<<"Enter your name,Roll no,Marks"<<endl;
+        cin>>name>>roll_no>>marks;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl<<"Roll Number:"<<roll_no<<endl<<"Marks:"<<marks;
+
+    }
+}s1;
+int main()
+{
+    Student *s;
+    s=&s1;
+    s1.getinfo();
+    s1.display();
+
+}
+*/
+/*
+
+class Emply{
+  public:
+    char name[20];
+    int age;
+    int salary;
+    void getinfo()
+    {
+        cout<<"Enter name,Age,Salary"<<endl;
+        cin>>name>>age>>salary;
+    }
+    void display()
+    {
+        cout<<"Name: "<<name<<endl<<"Age: "<<age<<endl<<"Salary: "<<salary<<endl;
+    }
+
+};
+int total_salary(int a,int b,int c,int d,int e)
+{
+    int ts;
+    ts=a+b+c+d+e;
+    return ts;
+}
+int main()
+{
+    int res;
+    Emply E[5];
+    for(int i=0;i<5;i++)
+    {
+        E[i].getinfo();
+        E[i].display();
+    }
+res=total_salary(E[0].salary,E[1].salary,E[2].salary,E[3].salary,E[4].salary);
+cout<<res;
+}
+*/
+
+/*
+///Class student got degree or not
+class Student{
+    public:
+    char name[20];
+    int marks,fees,total_fees;
+
+    void get()
+    {
+        cout<<"Enter Name, total marks, Fees "<<endl;
+        cin>>name>>marks>>fees;
+    }
+    void display()
+    {
+        cout<<"Name: "<<name<<endl<<"Marks: "<<marks<<endl<<"Fees: "<<fees<<endl;
+    }
+}s[3];
+int main()
+{
+    for(int i=0;i<3;i++)
+    {
+        s[i].get();
+        s[i].display();
+    }
+    for(int j=0;j<3;j++)
+    {
+    if(s[j].marks>=50 && s[j].fees>=5000)
+    {
+        cout<<"Congratulations!! You got degree."<<endl;
+    }
+    else if(s[j].marks<50)
+    cout<<"Marks are less can't get certificate"<<endl;
+    else if(s[j].fees<5000)
+        cout<<"Fees not paid so can't get certificate"<<endl;
+
+    else if(s[j].marks<50 &&s[j].fees<5000)
+        cout<<"Fail Certificate can't be issue"<<endl;
+    }
+return 0;
+}
+*/
+/*
+class Shop{
+public:
+char name[20];
+int quantity;
+float price,total,total_bill;
+ void get()
+ {
+     cout<<"Enter name, quantity, price "<<endl;
+     cin>>name>>quantity>>price;
+
+ }
+ void display()
+ {
+     cout<<"Name: "<<name<<"\t"<<"Quantity: "<<quantity<<"\t"<<"Price: "<<price<<endl;
+ }
+ float bill()
+ {
+     total=price*quantity;
+    cout<<"Total: "<<total<<endl;
+ }
+ void disp()
+ {
+     cout<<name<<"\t\t\t\t"<<quantity<<"\t\t\t\t\t"<<price<<endl;
+ }
+}item[3];
+
+
+
+float sum=0;
+
+float total_bill(){
+    for(int k=0;k<3;k++)
+sum+=item[k].price*item[k].quantity;
+cout<<"\n\n\t\t\t\t\t\t\t\tTotal bill is: "<<sum<<endl;
+}
+
+
+int main()
+{
+    cout<<"\t\t   Welcome to Grocery Shop!!"<<endl;
+
+    for(int i=0;i<3;i++)
+        {
+        item[i].get();
+        item[i].display();
+        item[i].bill();
+        }
+        cout<<"\n\n************************************************************************************************************************"<<endl<<
+        cout<<"\t\t\t\t\tMemo"<<endl;
+cout<<"Name of item: \t\t\t"<<"Quantity of item: \t\t\t"<<"Price of item: "<<endl;
+for(int i=0;i<3;i++)
+    item[i].disp();
+total_bill();
+return 0;
+}
+*/
+class Bank{
+    public:
+int deposit,sum_saving=0;
+int withdraw,current_saving=0;
+int saving_amount;
+int current_amount;
+public:
+    int choice;
+    void get()
+    {
+        cout<<"Enter choice which account you want to open? "<<endl<<"1.Saving Account"<<endl<<"2.Current Account"<<endl;
+        cin>>choice;
+    }
+    void display(){
+    if(choice==1)
+            cout<<"Saving account has opened"<<endl<<"Now you have to deposit min Rs1000 to activate your account"<<endl;
+        else
+            cout<<"Current Account has opened"<<endl<<"Now you have to deposit min Rs10000 to activate your account"<<endl;
+    }
+    int depo_saving(int d)
+    {
+         cout<<"Enter amount to deposit: "<<endl;
+        cin>> deposit;
+        sum_saving=sum_saving+deposit;
+        return sum_saving;
+    }
+    int depo_current(int cu)
+    {
+         cout<<"Enter amount to deposit: "<<endl;
+        cin>> deposit;
+        current_saving=current_saving+deposit;
+        return current_saving;
+    }
+
+
+    int saving(int s)
+{
+    saving_amount=sum_saving;
+    cout<<"Amount in your saving account is: "<<saving_amount<<endl;
+
+}
+int current(int c)
+{
+    current_amount=current_saving;
+    cout<<"Amount in your current account is: "<<current_amount<<endl;
+
+}
+};
+int deposit,current_saving=0;
+int sum_saving=0;
+int main()
+{
+    Bank b1;
+    b1.get();
+    b1.display();
+    b1.depo_saving(deposit);
+
+    b1.saving(sum_saving);
+    b1.depo_current(deposit);
+    b1.current(current_saving);
+
+return 0/0;
+
+}
