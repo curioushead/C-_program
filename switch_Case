@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    /*
+    ///PROGRAM 1
+
+    int day;
+    cout<<"Enter day number: ";
+    cin>>day;
+    switch(day)
+    {
+        case 1: cout<<"Day "<<day<<" represents MONDAY\n";
+        break;
+        case 2: cout<<"Day "<<day<<" represents TUESDAY\n";
+        break;
+        case 3: cout<<"Day "<<day<<" represents WEDNESDAY\n";
+        break;
+        case 4: cout<<"Day "<<day<<" represents THURSDAY\n";
+        break;
+        case 5: cout<<"Day "<<day<<" represents FRIDAY\n";
+        break;
+        case 6: cout<<"Day "<<day<<" represents SATURDAY\n";
+        break;
+        case 7: cout<<"Day "<<day<<" represents SUNDAY\n";
+        break;
+        default: cout<<day<<" is an Invalid Day\n";
+    }
+    */
+
+    ///PROGRAM 2
+    //Calculator
+    cout<<"Welcome to Calculator\n\tMENU\n";
+    cout<<"1.ADD\n2.SUB\n3.MULTIPLY\n4.DIVISION\n";
+    int choice;
+    cout<<"Enter the choice\n";
+    cin>>choice;
+       int a,b,c;
+        switch(choice)
+    {
+    case 1:cout<<"Enter any 2 integral number\n";
+        cin>>a>>b;
+        c=a+b;
+    cout<<"Result is: "<<c<<endl;
+    break;
+    case 2:cout<<"Enter any 2 integral number\n";
+        cin>>a>>b;
+        c=a-b;
+    cout<<"Result is: "<<c<<endl;
+    break;
+    case 3:cout<<"Enter any 2 integral number\n";
+        cin>>a>>b;
+         c=a*b;
+    cout<<"Result is: "<<c<<endl;
+    break;
+    case 4:cout<<"Enter any 2 integral number\n";
+        cin>>a>>b;
+        if(b==0)
+            cout<<"Invalid value.";
+         c=a/b;
+    cout<<"Result is: "<<c<<endl;
+    break;
+    default: cout<<"Enter valid choice";
+    break;
+
+    }
+
+    return 0;
+}
